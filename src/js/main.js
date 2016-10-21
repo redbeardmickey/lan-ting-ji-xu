@@ -1,5 +1,6 @@
-$(document).ready(function() {
+'use strict';
 
+$(document).ready(function() {
   loadSvg('#lanting', 'lantingxu-01')
 })
 
