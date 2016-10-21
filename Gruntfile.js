@@ -33,15 +33,19 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 9001,
-          base: 'build/'
+          base: 'build/',
+          keepalive: true
         }
       }
-    }
+    },
+
+    clean: ['build/']
 
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('default', ['copy']);
 
